@@ -44,7 +44,7 @@ namespace WordCounter
       }
       else
       {
-        return 1;
+        return 0;
       }
       // string[] splitSentence = this._sentence.ToLower().Split(' ');
       // string newWord = this._word.ToLower();
