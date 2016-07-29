@@ -45,7 +45,7 @@ namespace WordCounter
           //act.....
 
           //Assert
-          Assert.Equal(1, result);
+          Assert.Equal(0, result);
         }
     }
 }
