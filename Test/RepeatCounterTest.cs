@@ -10,20 +10,29 @@ namespace WordCounter
       public void Test1_RepeatCounterGetA_true()
       {
         //arrange
-        string word = "a";
-        RepeatCounter checkNewWord = new RepeatCounter(word,"");
 
+        RepeatCounter checkNewWord = new RepeatCounter("a", "a");
+
+        int result = checkNewWord.CountRepeats();
         //act.....
-        string checkWord = checkNewWord.GetWord();
 
         //Assert
-        Assert.Equal(word, checkWord);
+        Assert.Equal(1, result);
+        }
+        
+        [Fact]
+        public void Test2_LettersDontMatch_true()
+        {
+          //arrange
 
-        // Test2_RepeatCounterGetThe_true()
-      //
+          RepeatCounter checkNewWord = new RepeatCounter("a", "b");
 
+          int result = checkNewWord.CountRepeats();
+          //act.....
 
+          //Assert
+          Assert.Equal(0, result);
 
-      }
+        }
   }
 }

@@ -38,23 +38,31 @@ namespace WordCounter
 
     public int CountRepeats()
     {
-      string[] splitSentence = this._sentence.ToLower().Split(' ');
-      string newWord = this._word.Trim().ToLower();
-      if (this._word == "")
+      if (this._word == this._sentence)
+      {
+        return 1;
+      }
+      else
       {
         return 0;
       }
-
-      int count = 0;
-      foreach (string word in splitSentence)
-      {
-        if (word == newWord)
-      {
-        count++;
-      }
-
-      }
-        return count;
+      // string[] splitSentence = this._sentence.ToLower().Split(' ');
+      // string newWord = this._word.ToLower();
+      // if (this._word == "")
+      // {
+      //   return 0;
+      // }
+      //
+      // int count = 0;
+      // foreach (string word in splitSentence)
+      // {
+      //   if (word == newWord)
+      // {
+      //   count++;
+      // }
+      //
+      // }
+      //   return count;
 
       }
     }

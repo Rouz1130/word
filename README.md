@@ -7,11 +7,11 @@
 
 | Behavior: should handle           |  Input    | Output|
 | --------------------------------- |:---------:| -----:|
-| User enters single letter    |   "a" | 1 |        
-| User enters two letters    | "a""b"| 1   |
-| User enters two words | "and "the"| 1 |
-| User enters two of the same words  |"and" "and"       | 2  |
-| User enters a sentence |"its the  summer"|1|
+| User enters single letter    |  "a", "a" | 1 |        
+| User enters two letters    | "a", "b"| 0   |
+| User enters two words | "and "the"| 0 |
+| User enters two of the same words  |"and" "and"       | 1  |
+| User enters a sentence |"the", "its the summer"|1|
 ## Setup/Installation Requirements
 
 * _You have to have an active internet connection_
