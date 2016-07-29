@@ -17,22 +17,22 @@ namespace WordCounter
         //act.....
 
         //Assert
-        Assert.Equal(1, result);
+        Assert.Equal(0, result);
         }
-        
-        [Fact]
-        public void Test2_LettersDontMatch_true()
-        {
-          //arrange
-
-          RepeatCounter checkNewWord = new RepeatCounter("a", "b");
-
-          int result = checkNewWord.CountRepeats();
-          //act.....
-
-          //Assert
-          Assert.Equal(0, result);
-
-        }
+        //
+        // [Fact]
+        // public void Test2_LettersDontMatch_true()
+        // {
+        //   //arrange
+        //
+        //   RepeatCounter checkNewWord = new RepeatCounter("a", "b");
+        //
+        //   int result = checkNewWord.CountRepeats();
+        //   //act.....
+        //
+        //   //Assert
+        //   Assert.Equal(0, result);
+        //
+        // }
   }
 }
