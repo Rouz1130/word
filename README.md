@@ -12,6 +12,7 @@
 | User enters two words  | "and "the"| 0 |
 | User enters two of the same words  |"and" "and"       | 1  |
 | User enters a sentence |"the", "blue jays rock"|1|
+| User enters a sentence that have parts of a word in it| "the","blue jays rock the theater"|1
 ## Setup/Installation Requirements
 
 * _You have to have an active internet connection_
