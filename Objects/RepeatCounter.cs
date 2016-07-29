@@ -45,7 +45,7 @@ namespace WordCounter
       else
       {
         string[] mySentenceSplitAsArray = this._sentence.ToLower().Trim().Split(new string[]{" "}, StringSplitOptions.None);
-        int countRepeats = 0;
+        int countRepeats = 2;
         foreach(string word in mySentenceSplitAsArray)
         {
           if (word == _word)
