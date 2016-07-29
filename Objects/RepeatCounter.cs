@@ -46,24 +46,27 @@ namespace WordCounter
       {
         return 0;
       }
-      // string[] splitSentence = this._sentence.ToLower().Split(' ');
-      // string newWord = this._word.ToLower();
-      // if (this._word == "")
-      // {
-      //   return 0;
-      // }
-      //
-      // int count = 0;
-      // foreach (string word in splitSentence)
-      // {
-      //   if (word == newWord)
-      // {
-      //   count++;
-      // }
-      //
-      // }
-      //   return count;
+
+
 
       }
     }
   }
+
+  // string[] splitSentence = this._sentence.ToLower().Split(' ');
+  // string newWord = this._word.ToLower();
+  // if (this._word == "")
+  // {
+  //   return 0;
+  // }
+  //
+  // int count = 0;
+  // foreach (string word in splitSentence)
+  // {
+  //   if (word == newWord)
+  // {
+  //   count++;
+  // }
+  //
+  // }
+  //   return count;

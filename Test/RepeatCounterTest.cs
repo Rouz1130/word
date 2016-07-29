@@ -21,7 +21,7 @@ namespace WordCounter
         }
         //
         [Fact]
-        public void Test2_LettersDontMatch_true()
+        public void Test2_LetterDontMatch_true()
         {
           //arrange
 
@@ -32,7 +32,20 @@ namespace WordCounter
 
           //Assert
           Assert.Equal(0, result);
-
         }
-  }
+
+        [Fact]
+        public void Test3_TwoWordsReturnNone_true()
+        {
+          //arrange
+
+          RepeatCounter checkNewWord = new RepeatCounter("and", "the");
+
+          int result = checkNewWord.CountRepeats();
+          //act.....
+
+          //Assert
+          Assert.Equal(1, result);
+        }
+    }
 }
