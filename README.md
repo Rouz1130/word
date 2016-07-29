@@ -11,7 +11,7 @@
 | User enters two letters    | "a", "b"| 0   |
 | User enters two words  | "and "the"| 0 |
 | User enters two of the same words  |"and" "and"       | 1  |
-| User enters a sentence |"the", "its the summer"|1|
+| User enters a sentence |"the", "blue jays rock"|1|
 ## Setup/Installation Requirements
 
 * _You have to have an active internet connection_

@@ -47,7 +47,7 @@ namespace WordCounter
 
 
         [Fact]
-        public void Test4_TwoWordsReturnNone_true()
+        public void Test4_TwoWordsReturnOne_true()
       {
           //arrange
           RepeatCounter checkNewWord = new RepeatCounter("and", "and");
@@ -58,6 +58,29 @@ namespace WordCounter
           //Assert
           Assert.Equal(1, result);
       }
+
+        [Fact]
+        public void Test5_recognizesWordNotPresent_true()
+      {
+
+        RepeatCounter checkNewWord = new RepeatCounter("the", "blue jays rock");
+
+        int result = checkNewWord.CountRepeats();
+
+        Assert.Equal(0, result);
+      }
+
+
+              [Fact]
+              public void Test6_RegognizeWordInSentence_true()
+            {
+
+              RepeatCounter checkNewWord = new RepeatCounter("the", "the blue jays rock");
+
+              int result = checkNewWord.CountRepeats();
+
+              Assert.Equal(1, result);
+          }
 
     }
 }

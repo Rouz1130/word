@@ -42,20 +42,36 @@ namespace WordCounter
       {
         return 1;
       }
-      else
+      else()
+      {
+      //   string[] mySentenceSplitAsArray = this._sentence.ToLower().Trim().Split(new string[]{" "}, StringSplitOptions.None);
+      //   int countRepeats;
+      //   foreach(string word in mySentenceSplitAsArray)
+      //   {
+      //     if (word == _word)
+      //     {
+      //      countRepeats++;
+      //     }
+      //
+      //
+      //   }
+      //   return countRepeats;
+      // }
+
+      /*else
       {
         return 0;
-      }
+      }*/
 
-
+      //the blue jays rock the theater
 
       }
     }
   }
-
+  //
   // string[] splitSentence = this._sentence.ToLower().Split(' ');
   // string newWord = this._word.ToLower();
-  // if (this._word == "")
+  // if (this._word == this._sentence)
   // {
   //   return 0;
   // }
