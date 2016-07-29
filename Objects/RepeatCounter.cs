@@ -42,21 +42,21 @@ namespace WordCounter
       {
         return 1;
       }
-      else()
+      else
       {
-      //   string[] mySentenceSplitAsArray = this._sentence.ToLower().Trim().Split(new string[]{" "}, StringSplitOptions.None);
-      //   int countRepeats;
-      //   foreach(string word in mySentenceSplitAsArray)
-      //   {
-      //     if (word == _word)
-      //     {
-      //      countRepeats++;
-      //     }
-      //
-      //
-      //   }
-      //   return countRepeats;
-      // }
+        string[] mySentenceSplitAsArray = this._sentence.ToLower().Trim().Split(new string[]{" "}, StringSplitOptions.None);
+        int countRepeats = 0;
+        foreach(string word in mySentenceSplitAsArray)
+        {
+          if (word == _word)
+          {
+           countRepeats++;
+          }
+
+
+        }
+        return countRepeats;
+      }
 
       /*else
       {
