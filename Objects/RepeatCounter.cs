@@ -38,14 +38,14 @@ namespace WordCounter
 
     public int CountRepeats()
     {
-      // if (this._word == this._sentence)
+      if (this._word == this._sentence)
       {
         return 1;
       }
-      // else
-      // {
-      //   return 0;
-      // }
+      else
+      {
+        return 1;
+      }
       // string[] splitSentence = this._sentence.ToLower().Split(' ');
       // string newWord = this._word.ToLower();
       // if (this._word == "")
