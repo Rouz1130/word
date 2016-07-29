@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WordCounter
 {
-  public class WordCounter
+  public class HomeModule : NancyModule
   {
     public HomeModule()
     {
@@ -12,7 +12,7 @@ namespace WordCounter
       };
 
       Get["/result"] = _ => {
-        RepeatCounter newWord = new RepeatCounter ( Request.Form["new-word"]; Request.Form["new-sentence"]);
+        RepeatCounter newWord = new RepeatCounter ( Request.Form["new-word"], Request.Form["new-sentence"]);
         return View["result.cshtml", newWord];
       };
 
