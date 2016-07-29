@@ -82,16 +82,16 @@ namespace WordCounter
       Assert.Equal(1, result);
     }
 
-    [Fact]
-    public void Test7_RecognizeMulitipleWordsInSentence_true()
-    {
-
-      RepeatCounter checkNewWord = new RepeatCounter("the", "the blue jays rock the theater");
-
-      int result = checkNewWord.CountRepeats();
-
-      Assert.Equal(1, result);
-    }
+    // [Fact]
+    // public void Test7_RecognizeMulitipleWordsInSentence_true()
+    // {
+    //
+    //   RepeatCounter checkNewWord = new RepeatCounter("the", "the blue jays rock the theater");
+    //
+    //   int result = checkNewWord.CountRepeats();
+    //
+    //   Assert.Equal(1, result);
+    // }
 
 
   }
