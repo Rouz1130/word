@@ -1,17 +1,24 @@
-// using Nancy;
-// using System;
-// using System.Collections.Generic;
-// using WordCounter.Objects;
-//
-// namespace WordCounter
-// {
-//   public class HomeModule : NancyModule
-//   {
-//     public HomeModule()
-//     {
-//       Get["/"] = _ =>{
-//         return View["index.cshtml"];
-//       };
-// }
-// }
-// }
+using Nancy;
+using System.Collections.Generic;
+
+namespace WordCounter
+{
+  public class WordCounter
+  {
+    public HomeModule()
+    {
+      Get["/"] = _ => {
+        return View["index.cshtml"];
+      };
+
+      Get["/result"] = _ => {
+        RepeatCounter newWord = new RepeatCounter ( Request.Form["new-word"]; Request.Form["new-sentence"]);
+        return View["result.cshtml", newWord];
+      };
+
+    }
+
+
+  }
+
+}
