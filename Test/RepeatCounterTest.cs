@@ -56,7 +56,7 @@ namespace WordCounter
           int result = checkNewWord.CountRepeats();
 
           //Assert
-          Assert.Equal(0, result);
+          Assert.Equal(1, result);
       }
 
     }
