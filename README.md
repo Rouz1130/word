@@ -9,7 +9,7 @@
 | --------------------------------- |:---------:| -----:|
 | User enters single letter    |  "a", "a" | 1 |        
 | User enters two letters    | "a", "b"| 0   |
-| User enters two words that return "and" | "and "the"| 0 |
+| User enters two words  | "and "the"| 0 |
 | User enters two of the same words  |"and" "and"       | 1  |
 | User enters a sentence |"the", "its the summer"|1|
 ## Setup/Installation Requirements
