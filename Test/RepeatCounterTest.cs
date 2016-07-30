@@ -90,9 +90,18 @@ namespace WordCounter
 
       int result = checkNewWord.CountRepeats();
 
-      Assert.Equal(1, result);
+      Assert.Equal(2, result);
     }
 
+    [Fact]
+    public void Test8_RecognizeMulitipleWordsInSentence_true()
+    {
 
+      RepeatCounter checkNewWord = new RepeatCounter("the", "the blue jays rock the theater the");
+
+      int result = checkNewWord.CountRepeats();
+
+      Assert.Equal(3, result);
+    }
   }
 }

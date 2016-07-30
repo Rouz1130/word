@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 namespace WordCounter
@@ -38,6 +39,8 @@ namespace WordCounter
 
     public int CountRepeats()
     {
+
+
       if (this._word == this._sentence)
       {
         return 1;
@@ -45,10 +48,10 @@ namespace WordCounter
       else
       {
         string[] mySentenceSplitAsArray = this._sentence.ToLower().Trim().Split(new string[]{" "}, StringSplitOptions.None);
-        int countRepeats = 2;
+        int countRepeats = 0;
         foreach(string word in mySentenceSplitAsArray)
         {
-          if (word == _word)
+          if (word == _word.Trim())
           {
            countRepeats++;
           }
